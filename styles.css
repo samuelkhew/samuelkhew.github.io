@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,400,700');
+
+body {
+  font: 1rem 'Work Sans', sans-serif;
+  color: #666666;
+}
+
+@media (max-width: 576px) {
+  .display-4, h1 #jumbotronText {
+    font-size: 2.4rem;
+    line-height: 4rem;
+  }
+
+  .navbar {
+    margin: 0rem;
+    background-color: white;
+  }
+
+  .nav-item {
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin: 1rem 0rem 0rem 1rem;
+  }
+
+  #contactButton {
+    padding: 0.1rem 0rem 0.1rem 0rem;
+    margin: 1rem 0rem 1rem 0.5rem;
+    height: 35px;
+    width: 130px;
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+
+  .jumbotron {
+    margin: 3rem 0rem 0rem 0rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .display-4, h1 #jumbotronText {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .navbar {
+    margin: 0rem 1.3rem 0rem 2rem;
+    background-color: white;
+  }
+
+  .nav-item {
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin: 1rem 0rem 0rem 1rem;
+  }
+
+  #contactButton {
+    padding: 0.1rem 0rem 0.1rem 0rem;
+    margin: 1rem 0rem 1rem 0.5rem;
+    height: 35px;
+    width: 130px;
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+
+  .jumbotron {
+    margin: 3rem 3rem 0rem 3rem;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+ .display-4, h1 #jumbotronText {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .navbar {
+    margin: 0rem 1.3rem 0rem 2rem;
+    background-color: white;
+  }
+  
+  .nav-item {
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin: 1rem 0rem 0rem 1rem;
+  }
+
+  #contactButton {
+    padding: 0.1rem 0rem 0.1rem 0rem;
+    margin: 1rem 0rem 1rem 0.5rem;
+    height: 35px;
+    width: 130px;
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+
+  .jumbotron {
+    margin: 3rem 3rem 0rem 3rem;
+  }
+}
+
+@media (min-width: 992px){
+  .display-4, h1 #jumbotronText {
+     font-size: 3rem;
+     line-height: 4rem;
+   }
+ 
+   .navbar {
+     margin: 0rem 1.3rem 0rem 2rem;
+     background-color: white;
+   }
+   
+   .navbarDot {
+     height: 0.3rem;
+     width: 0.3rem;  
+     background-color: #3d9acd;
+     border-radius: 50%;
+     display: inline-block;
+     margin: 1rem 0.5rem 0rem 0.5rem;
+   }
+ 
+   .nav-item {
+     font-size: 0.9rem;
+     font-weight: 900;
+   }
+
+   #contactButton {
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    margin: 0.3rem 0.5rem 0rem 0.5rem;
+    height: 27px;
+    width: 104px;
+    font-size: 0.9rem;
+    font-weight: 900;
+  }
+ 
+   .jumbotron {
+     margin: 3rem 3rem 0rem 3rem;
+   }
+ }
+
+
+/**** END OF MEDIA QUERIES ****/
+
+
+#navbarLogo {
+  height: 33px;
+  width: 150px;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.nav-item {
+  color: #7d7d7d;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link:hover{
+  color: #3d9acd;
+}
+
+
+.blueButton {
+  border-radius: 25px;
+  color: #3d9acd;
+  border-color: #3d9acd;  
+}
+
+.blueButton:hover {
+  background-color: #3d9acd;
+  transition-duration: 0.5s;
+  color: white;
+}
+
+.jumbotron {
+  background-image: url(assets/jumbotronImage.png);
+  height: 28rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0px;
+  padding-top: 6rem;
+}
+
+#jumbotronLine {
+  border-left: 4px solid #3d9acd; 
+}
+
+.display-4, h1 #jumbotronText {
+  font-weight: 750;
+  margin: 0rem;
+}
+
+.greyHeader {
+  color: #cccccc;
+  font-weight: 700;
+}
+
+#aboutUsLine {
+  border-left: 1px solid #3d9acd; 
+}
+
+#medicineBottles {
+  width: 120px;
+  height: 88px;
+  margin-bottom: 2rem;
+}
+
+.valuesTableLeftColumn {
+  color: #3d9acd;
+}
+
+.valuesTableRightColumn {
+  padding-left: 1rem;
+}
+
+/*h1 #directorHeading {
+  font-size: 6rem;
+  font-weight: 100px;
+}*/
+
+
+div {
+  border:1px solid red;
+}
