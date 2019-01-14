@@ -3,6 +3,7 @@
 body {
   font: 1rem 'Work Sans', sans-serif;
   color: #666666;
+  text-align: justify;
 }
 
 @media (max-width: 576px) {
@@ -33,6 +34,31 @@ body {
 
   .jumbotron {
     margin: 3rem 0rem 0rem 0rem;
+  }
+
+  #aboutUsHeading {
+    text-align: left;
+  }
+
+  #aboutUsTextDiv {
+    margin-left: 2rem;
+  }
+
+  #directorHeading {
+    font-size: 3rem;
+  }
+
+  #directorProfilePictureDiv {
+    text-align: center;
+  }
+
+  #directorProfilePicture {
+    height: 100px;
+    width: 100px;
+  }
+
+  #directorTextDiv {
+    padding: 0rem 2rem 0rem 2rem;
   }
 }
 
@@ -66,6 +92,21 @@ body {
     margin: 3rem 3rem 0rem 3rem;
   }
 
+  #aboutUsHeading {
+    text-align: right;
+  }
+
+  #directorHeading {
+    font-size: 4rem;
+  }
+
+  #directorProfilePictureDiv {
+    text-align: left;
+  }
+
+  #directorTextDiv {
+    padding: 0rem 2rem 0rem 0rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -97,9 +138,28 @@ body {
   .jumbotron {
     margin: 3rem 3rem 0rem 3rem;
   }
+
+  #aboutUsHeading {
+    text-align: right;
+  }
+
+  #directorHeading {
+    font-size: 4.5rem;
+  }
+
+  #directorProfilePictureDiv {
+    text-align: right; 
+    margin: -2.5rem 0rem 0rem 0rem;
+    padding-right: 3rem;
+  }
+
+  #directorTextDiv {
+    margin-left: -2.5rem;
+    padding: 0rem 0rem 0rem 0rem;
+  }
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) and (max-width: 1200px) {
   .display-4, h1 #jumbotronText {
      font-size: 3rem;
      line-height: 4rem;
@@ -133,9 +193,86 @@ body {
     font-weight: 900;
   }
  
-   .jumbotron {
+  .jumbotron {
      margin: 3rem 3rem 0rem 3rem;
    }
+
+  #aboutUsHeading {
+    text-align: right;
+  }
+
+  #directorHeading {
+    font-size: 4.5rem;
+  }
+
+  #directorProfilePictureDiv {
+    text-align: right; 
+    margin: -2.5rem 0rem 0rem 0rem;
+    padding-right: 3rem;
+  }
+
+  #directorTextDiv {
+    margin-left: -2.5rem;
+    padding: 0rem 8rem 0rem 0rem;
+  }
+ }
+
+ @media (min-width: 1200px){
+  .display-4, h1 #jumbotronText {
+     font-size: 3rem;
+     line-height: 4rem;
+   }
+ 
+   .navbar {
+     margin: 0rem 1.3rem 0rem 2rem;
+     background-color: white;
+   }
+   
+   .navbarDot {
+     height: 0.3rem;
+     width: 0.3rem;  
+     background-color: #3d9acd;
+     border-radius: 50%;
+     display: inline-block;
+     margin: 1rem 0.5rem 0rem 0.5rem;
+   }
+ 
+   .nav-item {
+     font-size: 0.9rem;
+     font-weight: 900;
+   }
+
+   #contactButton {
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    margin: 0.3rem 0.5rem 0rem 0.5rem;
+    height: 27px;
+    width: 104px;
+    font-size: 0.9rem;
+    font-weight: 900;
+  }
+ 
+  .jumbotron {
+     margin: 3rem 3rem 0rem 3rem;
+   }
+
+  #aboutUsHeading {
+    text-align: right;
+  }
+
+  #directorHeading {
+    font-size: 4.5rem;
+  }
+
+  #directorProfilePictureDiv {
+    text-align: right; 
+    margin-top: -2.5rem;
+    padding-right: 3rem;
+  }
+
+  #directorTextDiv {
+    margin-left: -2.5rem;
+    padding: 0rem 12rem 0rem 0rem;
+  }
  }
 
 
@@ -196,8 +333,13 @@ body {
   font-weight: 700;
 }
 
-#aboutUsLine {
+#aboutUsCard {
+  margin-top: -3rem;
+}
+
+#aboutUsTextDiv {
   border-left: 1px solid #3d9acd; 
+  padding: 0rem 2rem 0rem 2rem
 }
 
 #medicineBottles {
@@ -214,12 +356,11 @@ body {
   padding-left: 1rem;
 }
 
-/*h1 #directorHeading {
-  font-size: 6rem;
-  font-weight: 100px;
-}*/
-
-
-div {
-  border:1px solid red;
+#directorHeading {
+color: #cccccc
 }
+
+
+/* div {
+  border:1px solid red;
+} */
