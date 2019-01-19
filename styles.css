@@ -68,6 +68,30 @@ body {
   #servicesTextRow {
     margin-top: -2.5rem;
   }
+
+  #historyHeading {
+    text-align: left;
+  }
+
+  .historyLeftCol {
+    border-left: 1px solid #e6e6e6; 
+    padding: 0.5rem 0rem 0.5rem 1.5rem;
+    margin: 0rem 0rem 0rem 2rem;
+    color: #3d9acd;
+    font-size: 1.1rem;
+    text-align: left;
+  }
+  
+  .historyRightCol {
+    padding: 0rem 4rem 1.5rem 3rem;
+    margin: 0rem 0rem 0rem 2rem;
+    border-left: 1px solid #e6e6e6; 
+  }
+
+  #historyArrowCol {
+    margin: -.5rem 0rem 0rem 0.85rem;
+  }
+
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -123,6 +147,47 @@ body {
   #servicesTextRow {
     margin-top: -3.5rem;
   }
+
+  #historyHeading {
+    text-align: right;
+  }
+
+  .historyLeftCol {
+    border-right: 1px solid #e6e6e6; 
+    padding: 0.5rem 1rem 1.5rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+    color: #3d9acd;
+    font-size: 1.1rem;
+    text-align: right;
+  }
+  
+  .historyRightCol {
+    padding: 0rem 2rem 1rem 1rem;
+  }
+
+  .historySmallDot{
+    height: 0.25rem;
+    width: 0.25rem;  
+    background-color: #3d9acd;
+    border-radius: 50%;
+    margin: 0rem 1rem 0.35rem -1.62rem;
+    display: inline-block;
+  }
+
+  .historyLargeDot{
+    height: 1rem;
+    width: 1rem;  
+    background-color: white;
+    border-radius: 50%;
+    margin: 0.5rem 1rem 0rem -1.55rem;
+    display: inline-block;
+  }
+
+  #historyArrowCol {
+    margin: -.5rem 0rem 0rem -1.2rem;
+    text-align: left;
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -181,6 +246,46 @@ body {
   #servicesTextRow {
     margin-top: -4rem;
   }
+
+  #historyHeading {
+    text-align: right;
+  }
+
+  .historyLeftCol {
+    border-right: 1px solid #e6e6e6; 
+    padding: 0.5rem 2rem 1.5rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+    color: #3d9acd;
+    font-size: 1.1rem;
+    text-align: right;
+  }
+  
+  .historyRightCol {
+    padding: 0rem 2rem 1rem 2rem;
+  }
+
+  .historySmallDot{
+    height: 0.25rem;
+    width: 0.25rem;  
+    background-color: #3d9acd;
+    border-radius: 50%;
+    margin: 0rem 2rem 0.35rem -2.62rem;
+    display: inline-block;
+  }
+
+  .historyLargeDot{
+    height: 1rem;
+    width: 1rem;  
+    background-color: white;
+    border-radius: 50%;
+    margin: 0.5rem 2rem 0rem -2.55rem;
+    display: inline-block;
+  }
+
+  #historyArrowCol {
+    margin: -.5rem 0rem 0rem -1.2rem;
+    text-align: left;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -195,12 +300,11 @@ body {
    }
    
    .navbarDot {
-     height: 0.3rem;
-     width: 0.3rem;  
+     height: 0.25rem;
+     width: 0.25rem;  
      background-color: #3d9acd;
      border-radius: 50%;
-     display: inline-block;
-     margin: 1rem 0.5rem 0rem 0.5rem;
+     margin: 0.9rem 0.5rem 0rem 0.5rem;
    }
  
    .nav-item {
@@ -210,7 +314,7 @@ body {
 
    #contactButton {
     padding: 0.1rem 0.1rem 0.1rem 0.1rem;
-    margin: 0.3rem 0.5rem 0rem 0.5rem;
+    margin: 0.18rem 0.5rem 0rem 0.5rem;
     height: 27px;
     width: 104px;
     font-size: 0.9rem;
@@ -248,6 +352,45 @@ body {
     margin-top: -4rem;
   }
 
+  #historyHeading {
+    text-align: right;
+  }
+
+  .historyLeftCol {
+    border-right: 1px solid #e6e6e6; 
+    padding: 0.5rem 2rem 1.5rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+    color: #3d9acd;
+    font-size: 1.1rem;
+    text-align: right;
+  }
+  
+  .historyRightCol {
+    padding: 0rem 2rem 1rem 2rem;
+  }
+
+  .historySmallDot{
+    height: 0.25rem;
+    width: 0.25rem;  
+    background-color: #3d9acd;
+    border-radius: 50%;
+    margin: 0rem 2rem 0.35rem -2.62rem;
+    display: inline-block;
+  }
+
+  .historyLargeDot{
+    height: 1rem;
+    width: 1rem;  
+    background-color: white;
+    border-radius: 50%;
+    margin: 0.5rem 2rem 0rem -2.55rem;
+    display: inline-block;
+  }
+
+  #historyArrowCol {
+    margin: -.5rem 0rem 0rem -1.23rem;
+    text-align: left;
+  }
  }
 
  @media (min-width: 1200px){
@@ -262,12 +405,11 @@ body {
    }
    
    .navbarDot {
-     height: 0.3rem;
-     width: 0.3rem;  
+     height: 0.25rem;
+     width: 0.25rem;  
      background-color: #3d9acd;
      border-radius: 50%;
-     display: inline-block;
-     margin: 1rem 0.5rem 0rem 0.5rem;
+     margin: 0.9rem 0.5rem 0rem 0.5rem;
    }
  
    .nav-item {
@@ -277,7 +419,7 @@ body {
 
    #contactButton {
     padding: 0.1rem 0.1rem 0.1rem 0.1rem;
-    margin: 0.3rem 0.5rem 0rem 0.5rem;
+    margin: 0.18rem 0.5rem 0rem 0.5rem;
     height: 27px;
     width: 104px;
     font-size: 0.9rem;
@@ -314,6 +456,47 @@ body {
   #servicesTextRow {
     margin-top: -5rem;
   }
+
+  #historyHeading {
+    text-align: right;
+  }
+
+  .historyLeftCol {
+    border-right: 1px solid #e6e6e6; 
+    padding: 0.5rem 2rem 1.5rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+    color: #3d9acd;
+    font-size: 1.1rem;
+    text-align: right;
+  }
+  
+  .historyRightCol {
+    padding: 0rem 6rem 1rem 2rem;
+  }
+
+  .historySmallDot{
+    height: 0.25rem;
+    width: 0.25rem;  
+    background-color: #3d9acd;
+    border-radius: 50%;
+    margin: 0rem 2rem 0.35rem -2.62rem;
+    display: inline-block;
+  }
+
+  .historyLargeDot{
+    height: 1rem;
+    width: 1rem;  
+    background-color: white;
+    border-radius: 50%;
+    margin: 0.5rem 2rem 0rem -2.55rem;
+    display: inline-block;
+  }
+
+  #historyArrowCol {
+    margin: -.5rem 0rem 0rem -1.2rem;
+    text-align: left;
+  }
+
  }
 
 
@@ -411,7 +594,18 @@ body {
   color: #f2f2f2;
 }
 
+#historyArrow {
+  border-left: .23rem solid transparent;
+  border-right: .23rem solid transparent;
+  border-top: .7rem solid #e6e6e6;
+  margin: 0rem 0rem 0rem 0rem;
+  display: inline-block;
+}
+
+
 
 /* div {
   border:1px solid red;
 } */
+
+/*https://davidwalsh.name/css-trianglesCSS Triangles*/
