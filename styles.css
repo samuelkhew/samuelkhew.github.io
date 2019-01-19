@@ -60,6 +60,14 @@ body {
   #directorTextDiv {
     padding: 0rem 2rem 0rem 2rem;
   }
+
+  #servicesHeading {
+    font-size: 3.5rem;
+  }
+
+  #servicesTextRow {
+    margin-top: -2.5rem;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -106,6 +114,14 @@ body {
 
   #directorTextDiv {
     padding: 0rem 2rem 0rem 0rem;
+  }
+
+  #servicesHeading {
+    font-size: 5rem;
+  }
+
+  #servicesTextRow {
+    margin-top: -3.5rem;
   }
 }
 
@@ -156,6 +172,14 @@ body {
   #directorTextDiv {
     margin-left: -2.5rem;
     padding: 0rem 0rem 0rem 0rem;
+  }
+
+  #servicesHeading {
+    font-size: 6rem;
+  }
+
+  #servicesTextRow {
+    margin-top: -4rem;
   }
 }
 
@@ -215,6 +239,15 @@ body {
     margin-left: -2.5rem;
     padding: 0rem 8rem 0rem 0rem;
   }
+
+  #servicesHeading {
+    font-size: 7rem;
+  }
+
+  #servicesTextRow {
+    margin-top: -4rem;
+  }
+
  }
 
  @media (min-width: 1200px){
@@ -273,6 +306,14 @@ body {
     margin-left: -2.5rem;
     padding: 0rem 12rem 0rem 0rem;
   }
+
+  #servicesHeading {
+    font-size: 7rem;
+  }
+
+  #servicesTextRow {
+    margin-top: -5rem;
+  }
  }
 
 
@@ -311,7 +352,7 @@ body {
 }
 
 .jumbotron {
-  background-image: url(assets/jumbotronImage.png);
+  background-image: url(assets/jetpharma-medicine.png);
   height: 28rem;
   background-size: cover;
   background-repeat: no-repeat;
@@ -342,7 +383,7 @@ body {
   padding: 0rem 2rem 0rem 2rem
 }
 
-#medicineBottles {
+#medicineBottlesImage {
   width: 120px;
   height: 88px;
   margin-bottom: 2rem;
@@ -357,7 +398,17 @@ body {
 }
 
 #directorHeading {
-color: #cccccc
+  color: #cccccc
+}
+
+.servicesIconImages {
+  height: 3.5rem;
+  width: 3.5rem;
+  text-align: center;
+}
+
+#servicesHeading {
+  color: #f2f2f2;
 }
 
 
