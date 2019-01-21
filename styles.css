@@ -8,7 +8,7 @@ body {
 
 @media (max-width: 576px) {
   .display-4, h1 #jumbotronText {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     line-height: 4rem;
   }
 
@@ -45,7 +45,7 @@ body {
   }
 
   #directorHeading {
-    font-size: 3rem;
+    font-size: 2.35rem;
   }
 
   #directorProfilePictureDiv {
@@ -62,7 +62,7 @@ body {
   }
 
   #servicesHeading {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
   }
 
   #servicesTextRow {
@@ -522,13 +522,14 @@ body {
 }
 
 
-.blueButton {
+#contactButton {
   border-radius: 25px;
   color: #3d9acd;
   border-color: #3d9acd;  
+  background-color: white;
 }
 
-.blueButton:hover {
+#contactButton:hover {
   background-color: #3d9acd;
   transition-duration: 0.5s;
   color: white;
