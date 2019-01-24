@@ -1,253 +1,360 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
 
-    <title>Jetpharma Homepage</title>
-  </head>
-  <body>
+  <link rel="stylesheet" href="styles.css">
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="index.html">
-          <img src="assets/jetpharma-logo.svg" alt="Jetpharma Logo" id="navbarLogo">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
+  <title>Jetpharma Homepage</title>
+</head>
 
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link active" href="#">ABOUT US</a><span class="navbarDot"></span>
-          <a class="nav-item nav-link" href="#">HISTORY</a><span class="navbarDot"></span>
-          <a class="nav-item nav-link" href="#">CATALOGUE</a><span class="navbarDot"></span>
-          <a class="nav-item nav-link" href="#">PARTNERS</a><span class="navbarDot"></span>
-          <a class="nav-item nav-link" href="#">CAREERS</a>
-          <button type="button" id="contactButton">Contact</button>
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="assets/jetpharma-logo.svg" alt="Jetpharma Logo" id="navbarLogo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link active" href="#">ABOUT US</a><span class="navbar-dot"></span>
+        <a class="nav-item nav-link" href="#">HISTORY</a><span class="navbar-dot"></span>
+        <a class="nav-item nav-link" href="#">CATALOGUE</a><span class="navbar-dot"></span>
+        <a class="nav-item nav-link" href="#">PARTNERS</a><span class="navbar-dot"></span>
+        <a class="nav-item nav-link" href="#">CAREERS</a>
+        <button type="button" id="contactButton">Contact</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-white">
+    <div class="container pt-5">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-sm-auto" id="jumbotronLine">
+          <h1 class="display-4" id="jumbotronText">YOUR ONE-STOP<br />PHARMACEUTICAL<br />SOLUTION</h1>
         </div>
       </div>
-    </nav>
+    </div>
+  </div>
 
-    <div class="jumbotron text-white">
-      <div class="container pt-5">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-sm-auto" id="jumbotronLine">
-            <h1 class="display-4" id="jumbotronText">YOUR ONE-STOP<br />PHARMACEUTICAL<br />SOLUTION</h1>
+  <div class="container">
+    <div class="card shadow" id="aboutUsCard">
+      <div class="card-body">
+        <div class="row mt-5">
+          <div class="col-sm-4">
+            <h4 class="grey-header pr-2" id="aboutUsHeading">ABOUT US</h4>
+          </div>
+          <div class="col-sm-8" id="aboutUsTextDiv">
+            <img src="assets/medicine-bottles.png" alt="Medicine Bottles" id="medicineBottlesImage">
+            <p>Jetpharma strives to be human-centric in all areas of our business.</p>
+            <p>People are always at the forefront of what we do. In Jetpharma, decisions are made by taking a
+              human-based approach.</p>
+            <p>Jetpharma is built on the pillars of 3 core values:</p>
+
+            <table>
+              <tr>
+                <td class="valuesTableLeftColumn">I</td>
+                <td class="valuesTableRightColumn">Worth of the Individual</td>
+              </tr>
+              <tr>
+                <td class="valuesTableLeftColumn">II</td>
+                <td class="valuesTableRightColumn">Teamwork</td>
+              </tr>
+              <tr>
+                <td class="valuesTableLeftColumn">III</td>
+                <td class="valuesTableRightColumn">Honesty & Integrity</td>
+              </tr>
+            </table>
+            <br />
+
+            <p>With experience of almost 15 years in the pharmaceuticals and medical device market here in Malaysia,
+              Jetpharmacan be your trusted partner to help build and create value for your brands. </p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-sm-12">
+            <h1 class="display-3 text-center" id="directorHeading">D I R E C T O R</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 col-md-6" id="directorProfilePictureDiv">
+            <img src="assets/director-matthew-john.png" alt="Director Matthew John" id="directorProfilePicture">
+          </div>
+          <div class="col-sm-8 col-md-6" id="directorTextDiv">
+            <br />
+            <p class="text-dark font-weight-bold">Matthew M. John</p>
+            <p>A pharmacist by training, he has over 20 years of experience in the pharmaceutical distribution and
+              retail
+              business. He has wide experience in the management and running of a company focused on generic
+              pharmaceuticals.
+              In his past employment as a business manager, he successfully doubled the annual turnover for the
+              business, from
+              USD $0.8 million to USD $1.8 million.</p>
           </div>
         </div>
       </div>
     </div>
-    
-    <div class="container">
-      <div class="card shadow" id="aboutUsCard">
-        <div class="card-body">
-          <div class="row mt-5">
-            <div class="col-sm-4">
-              <h4 class="greyHeader pr-2" id="aboutUsHeading">About Us</h1>
-            </div>
-            <div class="col-sm-8" id="aboutUsTextDiv">
-              <img src="assets/medicine-bottles.png" alt="Medicine Bottles" id="medicineBottlesImage">
-              <p>Jetpharma strives to be human-centric in all areas of our business.</p>
-              <p>People are always at the forefront of what we do. In Jetpharma, decisions are made by taking a human-based approach.</p>
-              <p>Jetpharma is built on the pillars of 3 core values:</p>
+  </div>
 
-              <table>
-                <tr>
-                  <td class="valuesTableLeftColumn">I</td>
-                  <td class="valuesTableRightColumn">Worth of the Individual</td>
-                </tr>
-                <tr>
-                  <td class="valuesTableLeftColumn">II</td>
-                  <td class="valuesTableRightColumn">Teamwork</td>
-                </tr>
-                <tr>
-                  <td class="valuesTableLeftColumn">III</td>
-                  <td class="valuesTableRightColumn">Honesty & Integrity</td>
-                </tr>
-              </table>
-              <br />
-              
-              <p>With experience of almost 15 years in the pharmaceuticals and medical device market here in Malaysia,
-                Jetpharmacan be your trusted partner to help build and create value for your brands. </p>
-            </div>
-          </div>
-          <div class="row mt-5"> 
-            <div class="col-sm-12">
-              <h1 class="display-3 text-center" id="directorHeading">D I R E C T O R</h1>
-            </div>
-          </div>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-12 text-center">
+        <p>As a trusted partner, Jetpharma offers</p>
+        <h1 class="display-3" id="servicesHeading">S E R V I C E S</h1>
+      </div>
+    </div>
+    <div class="row" id="servicesTextRow">
+      <div class="col-lg-4 px-5">
+        <img src="assets/regulatory-affairs-icon.svg" alt="Regulatory Affairs Icon" class="services-icon-images rounded mx-auto d-block">
+        <br />
+        <p class="text-dark text-center font-weight-bold">Regulatory Affairs</p>
+        <p>- Our team has a proven track record of approvals for pharmaceutical, OTC, traditional products and medical
+          devices.</p>
+        <br />
+      </div>
+      <div class="col-lg-4 px-5">
+        <img src="assets/salesforce-marketing-icon.svg" alt="Regulatory Affairs Icon" class="services-icon-images rounded mx-auto d-block">
+        <br />
+        <p class="text-dark text-center font-weight-bold">Salesforce & Marketing</p>
+        <p>
+          - Effective salesforce with a wide coverage of various channels from private hospitals and clinics to
+          pharmacies <br />
+          - Experienced management team armed with the ability to draw up marketing strategies to build value and grow
+          products across various therapeutic classes
+        </p>
+        <br />
+      </div>
+      <div class="col-lg-4 px-5">
+        <img src="assets/warehousing-facilities-icon.svg" alt="Regulatory Affairs Icon" class="services-icon-images rounded mx-auto d-block">
+        <br />
+        <p class="text-dark text-center font-weight-bold">Warehousing Facilities & Distribution</p>
+        <p>
+          - With a new expanded warehousing facility which adheres to Good Distribution Practices for Medical Devices
+          <br />
+          - A wide distribution network which allows us to reach customers in every corner of the country promptly
+        </p>
+        <br />
+      </div>
+    </div>
+  </div>
 
-          <div class="row">
-            <div class="col-sm-4 col-md-6" id="directorProfilePictureDiv">
-              <img src="assets/director-matthew-john.png" alt="Director Matthew John" id="directorProfilePicture">
-            </div>
-            <div class="col-sm-8 col-md-6" id="directorTextDiv">
-              <br />
-              <p class="text-dark font-weight-bold">Matthew M. John</p>
-              <p>A pharmacist by training, he has over 20 years of experience in the pharmaceutical distribution and retail
-                business. He has wide experience in the management and running of a company focused on generic pharmaceuticals.
-                In his past employment as a business manager, he successfully doubled the annual turnover for the business, from
-                USD $0.8 million to USD $1.8 million.</p>
-            </div>
-          </div>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-sm-4 history-left-col">
+        <h4 class="grey-header" id="historyHeading">HISTORY</h1>
+      </div>
+      <div class="col-sm-8">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 history-left-col">
+        FEBRUARY <b>2004</b>
+      </div>
+      <div class="col-sm-8 history-right-col">
+        <span class="history-large-dot shadow-sm"></span><span class="history-small-dot"></span>Inception
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 history-left-col">
+        NOVEMBER <b>2006</b>
+      </div>
+      <div class="col-sm-8 history-right-col">
+        <span class="history-large-dot shadow-sm"></span><span class="history-small-dot"></span>Became partners with
+        ASPIDE®
+        Medical to sell and market SURGIMESH® range of meshes in Malaysia.
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 history-left-col">
+        JULY <b>2008</b>
+      </div>
+      <div class="col-sm-8 history-right-col">
+        <span class="history-large-dot shadow-sm"></span><span class="history-small-dot"></span>Started Hospital Team
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 history-left-col">
+        JANUARY <b>2010</b>
+      </div>
+      <div class="col-sm-8 history-right-col">
+        <span class="history-large-dot shadow-sm"></span><span class="history-small-dot"></span>Started Oncology
+        Business
+        Team
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 history-left-col">
+        NOVEMBER <b>2010</b>
+      </div>
+      <div class="col-sm-8 history-right-col">
+        <span class="history-large-dot shadow-sm"></span><span class="history-small-dot"></span>Became official
+        partners with
+        NeilMed® Pharmaceuticals Inc. to sell, market and distribute NeilMed range of products in Malaysia.
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 history-left-col">
+        SEPTEMBER <b>2014</b>
+      </div>
+      <div class="col-sm-8 history-right-col">
+        <span class="history-large-dot shadow-sm"></span><span class="history-small-dot"></span>Awarded ISO 9001:2008
+        certification for establishing a Quality Management System for Trading and Distribution of Pharmaceuticals and
+        Medical Devices.
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 history-left-col">
+        <b>2014</b>
+      </div>
+      <div class="col-sm-8 history-right-col">
+        <span class="history-large-dot shadow-sm"></span><span class="history-small-dot"></span>Annual sales turnover
+        exceeding USD $5 million with a CAGR of 35% since 2012.
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 history-left-col">
+        APRIL <b>2015</b>
+      </div>
+      <div class="col-sm-8 history-right-col">
+        <span class="history-large-dot shadow-sm"></span><span class="history-small-dot"></span>Awarded GDPMD license
+        by
+        Medical Device Authority Malaysia
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 history-left-col">
+        APRIL <b>2017</b>
+      </div>
+      <div class="col-sm-8 history-right-col">
+        <span class="history-large-dot shadow-sm"></span><span class="history-small-dot"></span>Bought & refurbished a
+        new warehouse
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-8" id="historyArrowCol">
+        <span id="historyArrow"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="card card-body shadow text-center" id="catalogueDiv">
+      <div class="row h-100">
+        <div class="col-sm-12 my-auto">
+          <p>NEED TO KNOW WHAT PRODUCTS WE HAVE?<br />
+            SIMPLY DOWNLOAD OUR PRODUCT CATALOGUE TO FIND ALL
+            THE INFORMATION YOU NEED</p>
+          <img src="assets/download-icon.png" alt="Download Icon"><br /><br />
+          <button type="button" id="catalogueButton">DOWNLOAD</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col-12 text-center">
-          <p>As a trusted partner, Jetpharma offers</p>
-          <h1 class="display-3" id="servicesHeading">S E R V I C E S</h1>
+  <div class="container">
+    <div class="row mt-5 mb-3">
+      <div class="col-12 text-center">
+        <h4 class="grey-header">PARTNERS</h1>
+      </div>
+    </div>
+    <div class="scroll-wrapper">
+      <div class="card shadow mb-4 text-center partners-cards">
+        <div class="card-header partners-card-header-and-footer">
+          <img src="assets/intas-logo.png" alt="Intas Logo">
+        </div>
+        <div class="card-body partners-card-body">
+          <p><b>Intas Pharmaceuticals Ltd, INDIA</b></p>
+          <p class="text-justify">A leading global pharmaceutical formulation development, manufacturing and marketing
+            company. Currently ranked 10th in the Indian Pharma Market with a 2.80% market share. (IMS Health India,
+            Nov 2016 MAT).</p>
+        </div>
+        <div class="card-footer partners-card-header-and-footer pb-2">
+          <a href=".bd-example-modal-lg" data-toggle="modal"><img src="assets/circle-arrow-icon.png" alt="Circle Arrow Icon"></a>
         </div>
       </div>
-      <div class="row" id="servicesTextRow">
-        <div class="col-lg-4 px-5">
-          <img src="assets/regulatory-affairs-icon.svg" alt="Regulatory Affairs Icon" class="servicesIconImages rounded mx-auto d-block">
-          <br />
-          <p class="text-dark text-center font-weight-bold">Regulatory Affairs</p>
-          <p>- Our team has a proven track record of approvals for pharmaceutical, OTC, traditional products and medical devices.</p>
-          <br />
+      <div class="card shadow mb-4 text-center partners-cards">
+        <div class="card-header partners-card-header-and-footer">
+          <img src="assets/neilmed-logo.png" alt="NeilMed Logo">
         </div>
-        <div class="col-lg-4 px-5">
-          <img src="assets/salesforce-marketing-icon.svg" alt="Regulatory Affairs Icon" class="servicesIconImages rounded mx-auto d-block">
-          <br />
-          <p class="text-dark text-center font-weight-bold">Salesforce & Marketing</p>
-          <p>
-            - Effective salesforce with a wide coverage of various channels from private hospitals and clinics to pharmacies <br />
-            - Experienced management team armed with the ability to draw up marketing strategies to build value and grow products across various therapeutic classes
-          </p>
-          <br />
+        <div class="card-body partners-card-body">
+          <p><b>NeilMed Pharmaceuticals, Inc. USA</b></p>
+          <p class="text-justify">Founded in 2000, headquartered in California. Neilmed is the largest manufacturer and
+            supplier of large volume low pressure (LVLP) saline nasal irrigation systems in the world.</p>
         </div>
-        <div class="col-lg-4 px-5">
-          <img src="assets/warehousing-facilities-icon.svg" alt="Regulatory Affairs Icon" class="servicesIconImages rounded mx-auto d-block">
-          <br />
-          <p class="text-dark text-center font-weight-bold">Warehousing Facilities & Distribution</p>
-          <p>
-              -	With a new expanded warehousing facility which adheres to Good Distribution Practices for Medical Devices <br />
-              -	A wide distribution network which allows us to reach customers in every corner of the country promptly               
-          </p>
-          <br />
+        <div class="card-footer partners-card-header-and-footer pb-2">
+          <a href=".bd-example-modal-lg" data-toggle="modal"><img src="assets/circle-arrow-icon.png" alt="Circle Arrow Icon"></a>
+        </div>
+      </div>
+      <div class="card shadow mb-4 text-center partners-cards">
+        <div class="card-header partners-card-header-and-footer">
+          <img src="assets/aspide-logo.png" alt="Aspide Logo">
+        </div>
+        <div class="card-body partners-card-body">
+          <p><b>Aspide Medical, FRANCE</b></p>
+          <p class="text-justify">Founded in 1994, Aspide develops, manufactures and markets textile surgical implants
+            for the treatment of abdominal hernias, urological and gynaecological surgeries- for which they have won
+            numerous awards for their innovations.</p><br />
+        </div>
+        <div class="card-footer partners-card-header-and-footer pb-2">
+          <a href=".bd-example-modal-lg" data-toggle="modal"><img src="assets/circle-arrow-icon.png" alt="Circle Arrow Icon"></a>
+        </div>
+      </div>
+      <div class="card shadow mb-4 text-center partners-cards">
+        <div class="card-header partners-card-header-and-footer pb-2">
+          <img src="assets/moscow-regional-institute-of-blood-logo.png" alt="Moscow Regional Scientific Reasearch Institute of Blood Logo">
+        </div>
+        <div class="card-body partners-card-body">
+          <p><b>Moscow Regional Scientific Reasearch Institute of Blood</b></p>
+          <p class="text-justify">A multidisciplinary
+            educational and medical institution. One of the leaders in the study and treatment of blood
+            diseases, blood transfusion and thrombogenesis. It's newest products and
+            techniques are patented and used in Russia.</p><br />
+        </div>
+        <div class="card-footer partners-card-header-and-footer pb-2">
+          <a href=".bd-example-modal-lg" data-toggle="modal"><img src="assets/circle-arrow-icon.png" alt="Circle Arrow Icon"></a>
         </div>
       </div>
     </div>
-    
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col-sm-4 historyLeftCol">
-          <h4 class="greyHeader" id="historyHeading">History</h1>
+  </div>
+
+  <!-- Modal- I'll do this at the end -->
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <div class="col-sm-8">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4 historyLeftCol">
-          FEBRUARY <b>2004</b>
-        </div>
-        <div class="col-sm-8 historyRightCol">
-          <span class="historyLargeDot shadow-sm"></span><span class="historySmallDot"></span>Inception
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4 historyLeftCol">
-          NOVEMBER <b>2006</b>
-        </div>
-        <div class="col-sm-8 historyRightCol">
-          <span class="historyLargeDot shadow-sm"></span><span class="historySmallDot"></span>Became partners with ASPIDE®
-          Medical to sell and market SURGIMESH® range of meshes in Malaysia.
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-4 historyLeftCol">
-          JULY <b>2008</b>
-        </div>
-        <div class="col-sm-8 historyRightCol">
-          <span class="historyLargeDot shadow-sm"></span><span class="historySmallDot"></span>Started Hospital Team
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4 historyLeftCol">
-          JANUARY <b>2010</b>
-        </div>
-        <div class="col-sm-8 historyRightCol">
-          <span class="historyLargeDot shadow-sm"></span><span class="historySmallDot"></span>Started Oncology Business
-          Team
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4 historyLeftCol">
-          NOVEMBER <b>2010</b>
-        </div>
-        <div class="col-sm-8 historyRightCol">
-          <span class="historyLargeDot shadow-sm"></span><span class="historySmallDot"></span>Became official partners with
-          NeilMed® Pharmaceuticals Inc. to sell, market and distribute NeilMed range of products in Malaysia.
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4 historyLeftCol">
-          SEPTEMBER <b>2014</b>
-        </div>
-        <div class="col-sm-8 historyRightCol">
-          <span class="historyLargeDot shadow-sm"></span><span class="historySmallDot"></span>Awarded ISO 9001:2008
-          certification for establishing a Quality Management System for Trading and Distribution of Pharmaceuticals and
-          Medical Devices.
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4 historyLeftCol">
-          <b>2014</b>
-        </div>
-        <div class="col-sm-8 historyRightCol">
-          <span class="historyLargeDot shadow-sm"></span><span class="historySmallDot"></span>Annual sales turnover
-          exceeding USD $5 million with a CAGR of 35% since 2012.
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4 historyLeftCol">
-          APRIL <b>2015</b>
-        </div>
-        <div class="col-sm-8 historyRightCol">
-          <span class="historyLargeDot shadow-sm"></span><span class="historySmallDot"></span>Awarded GDPMD license by
-          Medical Device Authority Malaysia
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4 historyLeftCol">
-          APRIL <b>2017</b>
-        </div>
-        <div class="col-sm-8 historyRightCol">
-          <span class="historyLargeDot shadow-sm"></span><span class="historySmallDot"></span>Bought & refurbished a new
-          warehouse
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-        </div>
-        <div class="col-sm-8" id="historyArrowCol">
-            <span id="historyArrow"></span>
-        </div>
-      </div>      
     </div>
-    
-    
+  </div>
 
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
 
-
-
-
-    
-    
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
 </html>
