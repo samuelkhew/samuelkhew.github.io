@@ -92,6 +92,14 @@ body {
   #historyArrowCol {
     margin: -.5rem 0rem 0rem 0.85rem;
   }
+  
+  #contactHeading {
+    margin-bottom: 1rem;
+  }
+
+  #contactFormDiv {
+    margin-left: 1.5rem;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -187,6 +195,14 @@ body {
   #historyArrowCol {
     margin: -.5rem 0rem 0rem -1.2rem;
     text-align: left;
+  }
+  
+  #contactHeading {
+    text-align: right;
+  }
+
+  #footer {
+    padding: 0rem 7rem;
   }
 
 }
@@ -293,6 +309,10 @@ body {
     padding-left: 4rem;
     padding-right: 4rem;
     font-size: 1.2rem;
+  }
+
+  #contactHeading {
+    text-align: right;
   }
 }
 
@@ -405,6 +425,10 @@ body {
     padding-left: 12rem;
     padding-right: 12rem;
     font-size: 1.2rem;
+  }
+
+  #contactHeading {
+    text-align: right;
   }
  }
 
@@ -519,6 +543,10 @@ body {
     font-size: 1.2rem;
   }
 
+  #contactHeading {
+    text-align: right;
+  }
+
  }
 
 
@@ -557,7 +585,7 @@ body {
   color: white;
 }
 
-.jumbotron {
+#homeJumbotronDiv {
   background-image: url(assets/jetpharma-medicine.png);
   height: 28rem;
   background-size: cover;
@@ -567,7 +595,7 @@ body {
 }
 
 #jumbotronLine {
-  border-left: 4px solid #3d9acd; 
+  border-left: 4px solid #3d9acd;
 }
 
 .display-4, h1 #jumbotronText {
@@ -604,7 +632,7 @@ body {
 }
 
 #directorHeading {
-  color: #ccc
+  color: #ccc;
 }
 
 .services-icon-images {
@@ -626,7 +654,7 @@ body {
   background-image: url("assets/catalogue-background.png");
 }
 
-#catalogueButton {
+#downloadButton {
   border-radius: 25px;
   color: white;
   border-color: #f06116;  
@@ -635,7 +663,7 @@ body {
   padding: 0.5rem 1.5rem;
 }
 
-#catalogueButton:hover {
+#downloadButton:hover {
   background-color: white;
   transition-duration: 0.5s;
   color: #f06116;
@@ -663,6 +691,79 @@ body {
   padding-bottom: 0;
 }
 
+#contactFormDiv {
+  border-left: 1px solid #3d9acd; 
+}
+
+input {
+  max-width: 25rem;
+}
+
+.form-control::placeholder {
+  color: #ccc;
+}
+
+#submitButton {
+  border-radius: 25px;
+  color: white;
+  border-color: #f06116;  
+  background-color: #f06116;
+  padding: 0.3rem 3rem;
+}
+
+#submitButton:hover {
+  background-color: white;
+  transition-duration: 0.5s;
+  color: #f06116;
+}
+
+#footer {
+  background-color: #4d4d4d;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+
+.footer-icons {
+  height:23px;
+  width: 18px;
+}
+
+/* ***************CAREERS PAGE*************** */
+
+#careersJumbotronDiv {
+  background-image: url(assets/jetpharma-careers-header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 18.5rem;
+  border-radius: 0px;
+  padding-top: 5.5rem;
+}
+
+#careersIconImage {
+  height: 5rem;
+  width: 5rem;
+}
+
+#careersDescriptionDiv {
+  border-left: 1px solid #3d9acd;
+}
+
+.jumbotron-card {
+  margin-top: -3rem;
+  padding: 0rem 5rem;
+
+}
+
+/* #footerLocationCol {
+  padding-left: 9rem;
+}*/
+
+/* table, th, td {
+  border: 1px solid black;
+}*/
+
 /* div {
   border:1px solid red;
-} */
+}  */

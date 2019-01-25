@@ -10,9 +10,32 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
 
+  <!-- Link to CSS style sheet -->
   <link rel="stylesheet" href="styles.css">
 
+  <!-- Script to disable contact form submission without required fields -->
+  <script>
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+
   <title>Jetpharma Homepage</title>
+
 </head>
 
 <body>
@@ -37,7 +60,7 @@
     </div>
   </nav>
 
-  <div class="jumbotron text-white">
+  <div class="jumbotron text-white" id="homeJumbotronDiv">
     <div class="container pt-5">
       <div class="row align-items-center justify-content-center">
         <div class="col-sm-auto" id="jumbotronLine">
@@ -258,7 +281,7 @@
             SIMPLY DOWNLOAD OUR PRODUCT CATALOGUE TO FIND ALL
             THE INFORMATION YOU NEED</p>
           <img src="assets/download-icon.png" alt="Download Icon"><br /><br />
-          <button type="button" id="catalogueButton">DOWNLOAD</button>
+          <button type="button" id="downloadButton">DOWNLOAD</button>
         </div>
       </div>
     </div>
@@ -346,6 +369,99 @@
       </div>
     </div>
   </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-4">
+        <h4 class="grey-header pr-2" id="contactHeading">CONTACT</h4>
+      </div>
+      <div class="col-sm-8 px-4" id="contactFormDiv">
+        <form class="needs-validation" novalidate>
+          <div class="form-group">
+            <input type="text" class="form-control" id="nameField" placeholder="Name*" required>
+            <div class="invalid-feedback">
+              Name is required.
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="emailField" placeholder="Email*" required>
+            <div class="invalid-feedback">
+              Email is required.
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="number" class="form-control" id="phoneField" placeholder="Phone">
+            <div class="invalid-feedback">
+              Invalid. Kindly follow the format "0129983948".
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="messageField" placeholder="Message*" required>
+            <div class="invalid-feedback">
+              Message is required.
+            </div>
+          </div>
+          <button type="submit" id="submitButton">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-5 py-5" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" id="footerLocationCol">
+          <table>
+            <tr class="align-top">
+              <td>
+                <img src="assets/location-icon.svg" class="footer-icons" alt="Location Icon">
+              </td>
+              <td class="pl-2">
+                Jetpharma Sdn Bhd (643827-K) <br />
+                No.13 Jalan Rajwali 2, Bandar Puchong Jaya, <br />
+                47100 Puchong Selangor <br />
+                Malaysia
+              </td>
+            </tr>
+          </table><br />
+        </div>
+        <div class="col-md-4" id="footerContactCol">
+          <table>
+            <tr class="align-top">
+              <td>
+                <img src="assets/email-icon.svg" class="footer-icons" alt="Email Icon">
+              </td>
+              <td class="pl-2">
+                jetpharmasdnbhd@gmail.com
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td>
+                <img src="assets/phone-icon.svg" class="footer-icons" alt="Phone Icon">
+              </td>
+              <td class="pl-2">
+                +603-80761651
+              </td>
+            </tr>
+            <tr class="align-top">
+              <td>
+                <img src="assets/fax-icon.svg" class="footer-icons" alt="Fax Icon">
+              </td>
+              <td class="pl-2">
+                +603-80763940
+              </td>
+            </tr>
+          </table><br />
+        </div>
+        <div class="col-md-4" id="footerAccreditationCol">
+          <img src="assets/nqa-logo.png" class="mx-2" alt="NQA Logo">
+          <img src="assets/ukas-logo.png" class="mx-2" alt="UKAS Logo">
+          <img src="assets/iaf-logo.png" class="mx-2" alt="IAF Logo">
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
