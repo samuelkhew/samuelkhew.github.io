@@ -4,10 +4,12 @@ body {
   font: 1rem 'Work Sans', sans-serif;
   color: #666666;
   text-align: justify;
+  position: relative;
+  margin-top: 40px;
 }
 
 @media (max-width: 576px) {
-  .display-4, h1 #jumbotronText {
+  .display-4, h1 #homeJumbotronText {
     font-size: 1.8rem;
     line-height: 4rem;
   }
@@ -99,11 +101,17 @@ body {
 
   #contactFormDiv {
     margin-left: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  #jetpharmaCareersGraphic {
+    width: 100%;
   }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-  .display-4, h1 #jumbotronText {
+  .display-4, h1 #homeJumbotronText {
     font-size: 3rem;
     line-height: 4rem;
   }
@@ -201,14 +209,26 @@ body {
     text-align: right;
   }
 
+  #contactFormDiv {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   #footer {
     padding: 0rem 7rem;
   }
 
+  #interestedRow {
+    padding-left: 4rem;
+  }
+
+  #jetpharmaCareersGraphic {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
- .display-4, h1 #jumbotronText {
+ .display-4, h1 #homeJumbotronText {
     font-size: 3rem;
     line-height: 4rem;
   }
@@ -314,10 +334,23 @@ body {
   #contactHeading {
     text-align: right;
   }
+
+  #contactFormDiv {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  #careersDescriptionRow {
+    margin: 0;
+  }
+
+  #jetpharmaCareersGraphic {
+    width: 100%;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .display-4, h1 #jumbotronText {
+  .display-4, h1 #homeJumbotronText {
      font-size: 3rem;
      line-height: 4rem;
    }
@@ -430,10 +463,27 @@ body {
   #contactHeading {
     text-align: right;
   }
+
+  #contactFormDiv {
+    padding-left: 1.5rem;
+    padding-right: 13rem;
+  }
+
+  #careersDescriptionRow {
+    margin: 0 3rem;
+  }
+
+  #interestedRow {
+    padding-left: 3.8rem;
+  }
+
+  #jetpharmaCareersGraphic {
+    width: 70%;
+  }
  }
 
  @media (min-width: 1200px){
-  .display-4, h1 #jumbotronText {
+  .display-4, h1 #homeJumbotronText {
      font-size: 3rem;
      line-height: 4rem;
    }
@@ -547,11 +597,26 @@ body {
     text-align: right;
   }
 
+  #contactFormDiv {
+    padding-left: 1.5rem;
+    padding-right: 18rem;
+  }
+
+  #careersDescriptionRow {
+    margin: 0 7rem;
+  }
+  
+  #interestedRow {
+    padding-left: 5rem;
+  }
+
+  #jetpharmaCareersGraphic {
+    width: 70%;
+  }
  }
 
 
 /**** END OF MEDIA QUERIES ****/
-
 
 #navbarLogo {
   height: 33px;
@@ -571,7 +636,6 @@ body {
   color: #3d9acd;
 }
 
-
 #contactButton {
   border-radius: 25px;
   color: #3d9acd;
@@ -583,6 +647,11 @@ body {
   background-color: #3d9acd;
   transition-duration: 0.5s;
   color: white;
+}
+
+#historyContainer, #catalogueContainer, #partnersContainer{
+  padding-top: 6rem;
+  margin-top: -6rem;
 }
 
 #homeJumbotronDiv {
@@ -598,7 +667,7 @@ body {
   border-left: 4px solid #3d9acd;
 }
 
-.display-4, h1 #jumbotronText {
+.display-4, h1 #homeJumbotronText {
   font-weight: 750;
   margin: 0rem;
 }
@@ -654,7 +723,7 @@ body {
   background-image: url("assets/catalogue-background.png");
 }
 
-#downloadButton {
+.downloadButton {
   border-radius: 25px;
   color: white;
   border-color: #f06116;  
@@ -663,10 +732,14 @@ body {
   padding: 0.5rem 1.5rem;
 }
 
-#downloadButton:hover {
+.downloadButton:hover {
   background-color: white;
   transition-duration: 0.5s;
   color: #f06116;
+}
+
+#downloadCard{
+  margin-top: -2rem;
 }
 
 .scroll-wrapper {
@@ -695,9 +768,9 @@ body {
   border-left: 1px solid #3d9acd; 
 }
 
-input {
+/* input {
   max-width: 25rem;
-}
+} */
 
 .form-control::placeholder {
   color: #ccc;
@@ -726,8 +799,8 @@ input {
 }
 
 .footer-icons {
-  height:23px;
-  width: 18px;
+  height:15px;
+  width: 15px;
 }
 
 /* ***************CAREERS PAGE*************** */
@@ -753,16 +826,53 @@ input {
 .jumbotron-card {
   margin-top: -3rem;
   padding: 0rem 5rem;
-
 }
 
-/* #footerLocationCol {
-  padding-left: 9rem;
-}*/
+.display-4, h1 #careersJumbotronText {
+  font-weight: 750;
+  margin: 0rem;
+  font-size: 3rem;
+}
 
-/* table, th, td {
-  border: 1px solid black;
-}*/
+.positions-sub-heading {
+  font-size: 1.15rem;
+  color: #ccc;
+}
+
+.positions-cards {
+  min-width: 18rem;
+  margin: 1rem;
+}
+
+.positionsDetailsButton {
+  border-radius: 25px;
+  color: #3d9acd;
+  border-color: #3d9acd;  
+  background-color: white;
+  padding: 0.1rem 0rem;
+  margin: 1rem 0rem 1rem 0.5rem;
+  height: 30px;
+  width: 130px;
+}
+
+.positionsDetailsButton:hover {
+  background-color: #3d9acd;
+  transition-duration: 0.5s;
+  color: white;
+}
+
+.close {
+  color: white; 
+  opacity: 1;
+  font-size: 2.4rem;
+  font-weight: 350;
+}
+
+.interested-images {
+  height: 40px;
+  width: 40px;
+  text-align: right;
+}
 
 /* div {
   border:1px solid red;

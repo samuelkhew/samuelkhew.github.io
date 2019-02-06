@@ -13,8 +13,9 @@
   <!-- Link to CSS style sheet -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Script to disable contact form submission without required fields -->
+
   <script>
+    //Script to disable contact form submission without required fields
     (function () {
       'use strict';
       window.addEventListener('load', function () {
@@ -32,14 +33,25 @@
         });
       }, false);
     })();
+
+    //Script to disable contact form submission without required fields
+    function yesnoCheck() {
+      if (document.getElementById('downloadYes').checked) {
+        document.getElementById('placeOfPracticeDiv').style.display = "block";
+        document.getElementById('downloadPlaceField').focus();
+      }
+      else document.getElementById('placeOfPracticeDiv').style.display = "none";
+    }
+
   </script>
 
   <title>Jetpharma Homepage</title>
 
 </head>
 
-<body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+<body data-spy="scroll" data-target="#mainNavbar" data-offset="200">
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="mainNavbar">
     <a class="navbar-brand" href="index.html">
       <img src="assets/jetpharma-logo.svg" alt="Jetpharma Logo" id="navbarLogo">
     </a>
@@ -50,12 +62,13 @@
 
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link active" href="#">ABOUT US</a><span class="navbar-dot"></span>
-        <a class="nav-item nav-link" href="#">HISTORY</a><span class="navbar-dot"></span>
-        <a class="nav-item nav-link" href="#">CATALOGUE</a><span class="navbar-dot"></span>
-        <a class="nav-item nav-link" href="#">PARTNERS</a><span class="navbar-dot"></span>
-        <a class="nav-item nav-link" href="#">CAREERS</a>
+        <a class="nav-item nav-link active" href="#homeJumbotronDiv">ABOUT US</a><span class="navbar-dot"></span>
+        <a class="nav-item nav-link" href="#historyContainer">HISTORY</a><span class="navbar-dot"></span>
+        <a class="nav-item nav-link" href="#catalogueContainer">CATALOGUE</a><span class="navbar-dot"></span>
+        <a class="nav-item nav-link" href="#partnersContainer">PARTNERS</a><span class="navbar-dot"></span>
+        <a class="nav-item nav-link" href="careers.html">CAREERS</a>
         <button type="button" id="contactButton">Contact</button>
+        <!-- <a class="nav-item nav-link" href="#partnersContainer" role="button" id="contactButton">CONTACT</a> -->
       </div>
     </div>
   </nav>
@@ -64,7 +77,7 @@
     <div class="container pt-5">
       <div class="row align-items-center justify-content-center">
         <div class="col-sm-auto" id="jumbotronLine">
-          <h1 class="display-4" id="jumbotronText">YOUR ONE-STOP<br />PHARMACEUTICAL<br />SOLUTION</h1>
+          <h1 class="display-4" id="homeJumbotronText">YOUR ONE-STOP<br />PHARMACEUTICAL<br />SOLUTION</h1>
         </div>
       </div>
     </div>
@@ -142,7 +155,8 @@
         <img src="assets/regulatory-affairs-icon.svg" alt="Regulatory Affairs Icon" class="services-icon-images rounded mx-auto d-block">
         <br />
         <p class="text-dark text-center font-weight-bold">Regulatory Affairs</p>
-        <p>- Our team has a proven track record of approvals for pharmaceutical, OTC, traditional products and medical
+        <p>- Our team has a proven track record of approvals for pharmaceutical, OTC, traditional products and
+          medical
           devices.</p>
         <br />
       </div>
@@ -153,7 +167,8 @@
         <p>
           - Effective salesforce with a wide coverage of various channels from private hospitals and clinics to
           pharmacies <br />
-          - Experienced management team armed with the ability to draw up marketing strategies to build value and grow
+          - Experienced management team armed with the ability to draw up marketing strategies to build value and
+          grow
           products across various therapeutic classes
         </p>
         <br />
@@ -172,7 +187,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" id="historyContainer">
     <div class="row mt-5">
       <div class="col-sm-4 history-left-col">
         <h4 class="grey-header" id="historyHeading">HISTORY</h1>
@@ -232,7 +247,8 @@
       </div>
       <div class="col-sm-8 history-right-col">
         <span class="history-large-dot shadow-sm"></span><span class="history-small-dot"></span>Awarded ISO 9001:2008
-        certification for establishing a Quality Management System for Trading and Distribution of Pharmaceuticals and
+        certification for establishing a Quality Management System for Trading and Distribution of Pharmaceuticals
+        and
         Medical Devices.
       </div>
     </div>
@@ -260,7 +276,8 @@
         APRIL <b>2017</b>
       </div>
       <div class="col-sm-8 history-right-col">
-        <span class="history-large-dot shadow-sm"></span><span class="history-small-dot"></span>Bought & refurbished a
+        <span class="history-large-dot shadow-sm"></span><span class="history-small-dot"></span>Bought & refurbished
+        a
         new warehouse
       </div>
     </div>
@@ -273,21 +290,80 @@
     </div>
   </div>
 
-  <div class="container mt-5">
-    <div class="card card-body shadow text-center" id="catalogueDiv">
-      <div class="row h-100">
+  <div class="container mt-5" id="catalogueContainer">
+    <div class="card card-body shadow text-center pb-5" id="catalogueDiv">
+      <div class="row">
         <div class="col-sm-12 my-auto">
           <p>NEED TO KNOW WHAT PRODUCTS WE HAVE?<br />
             SIMPLY DOWNLOAD OUR PRODUCT CATALOGUE TO FIND ALL
             THE INFORMATION YOU NEED</p>
           <img src="assets/download-icon.png" alt="Download Icon"><br /><br />
-          <button type="button" id="downloadButton">DOWNLOAD</button>
+          <button type="button" class="downloadButton" data-toggle="collapse" data-target="#downloadCollapse"
+            aria-expanded="false">DOWNLOAD</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container">
+  <div class="collapse" id="downloadCollapse">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+          <div class="card card-body shadow" id="downloadCard">
+            It's always best to know exactly what you're purchasing before you click "Check Out".<br />
+            Download our product catalogue for free!
+            <form class="needs-validation mt-4" novalidate>
+              <div class="form-row">
+                <div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="downloadNameField" placeholder="Name*" required>
+                    <div class="invalid-feedback">
+                      Name is required.
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="downloadEmailField" placeholder="Email*" required>
+                    <div class="invalid-feedback">
+                      Email is required.
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="number" class="form-control" id="downloadPhoneField" placeholder="Phone">
+                    <div class="invalid-feedback">
+                      Invalid. Kindly follow the format "0129983948".
+                    </div>
+                  </div>
+                  Are you a healthcare professional? <br />
+                  <div class="form-check form-check-inline my-4">
+                    <input class="mr-2" type="radio" onclick="javascript:yesnoCheck();" name="inlineRadioOptions" id="downloadYes"
+                      value="Yes">
+                    <label class="form-check-label" for="downloadYes">Yes</label>
+                  </div>
+                  <div class="form-check form-check-inline ml-5">
+                    <input class="mr-2" type="radio" onclick="javascript:yesnoCheck();" name="inlineRadioOptions" id="downloadNo"
+                      value="No" checked>
+                    <label class="form-check-label" for="downloadNo">No</label>
+                  </div>
+                  <div id="placeOfPracticeDiv" style="display:none">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="downloadPlaceField" placeholder="Place of Practice*"
+                        required>
+                      <div class="invalid-feedback">
+                        Place of practice is required.
+                      </div>
+                    </div>
+                  </div>
+                  <br /><button type="submit" class="downloadButton">DOWNLOAD FOR FREE</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="partnersContainer">
     <div class="row mt-5 mb-3">
       <div class="col-12 text-center">
         <h4 class="grey-header">PARTNERS</h1>
@@ -300,7 +376,8 @@
         </div>
         <div class="card-body partners-card-body">
           <p><b>Intas Pharmaceuticals Ltd, INDIA</b></p>
-          <p class="text-justify">A leading global pharmaceutical formulation development, manufacturing and marketing
+          <p class="text-justify">A leading global pharmaceutical formulation development, manufacturing and
+            marketing
             company. Currently ranked 10th in the Indian Pharma Market with a 2.80% market share. (IMS Health India,
             Nov 2016 MAT).</p>
         </div>
@@ -314,7 +391,8 @@
         </div>
         <div class="card-body partners-card-body">
           <p><b>NeilMed Pharmaceuticals, Inc. USA</b></p>
-          <p class="text-justify">Founded in 2000, headquartered in California. Neilmed is the largest manufacturer and
+          <p class="text-justify">Founded in 2000, headquartered in California. Neilmed is the largest manufacturer
+            and
             supplier of large volume low pressure (LVLP) saline nasal irrigation systems in the world.</p>
         </div>
         <div class="card-footer partners-card-header-and-footer pb-2">
@@ -327,7 +405,8 @@
         </div>
         <div class="card-body partners-card-body">
           <p><b>Aspide Medical, FRANCE</b></p>
-          <p class="text-justify">Founded in 1994, Aspide develops, manufactures and markets textile surgical implants
+          <p class="text-justify">Founded in 1994, Aspide develops, manufactures and markets textile surgical
+            implants
             for the treatment of abdominal hernias, urological and gynaecological surgeries- for which they have won
             numerous awards for their innovations.</p><br />
         </div>
@@ -375,28 +454,28 @@
       <div class="col-sm-4">
         <h4 class="grey-header pr-2" id="contactHeading">CONTACT</h4>
       </div>
-      <div class="col-sm-8 px-4" id="contactFormDiv">
+      <div class="col-sm-8" id="contactFormDiv">
         <form class="needs-validation" novalidate>
           <div class="form-group">
-            <input type="text" class="form-control" id="nameField" placeholder="Name*" required>
+            <input type="text" class="form-control" id="contactNameField" placeholder="Name*" required>
             <div class="invalid-feedback">
               Name is required.
             </div>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" id="emailField" placeholder="Email*" required>
+            <input type="text" class="form-control" id="contactEmailField" placeholder="Email*" required>
             <div class="invalid-feedback">
               Email is required.
             </div>
           </div>
           <div class="form-group">
-            <input type="number" class="form-control" id="phoneField" placeholder="Phone">
+            <input type="number" class="form-control" id="contactphoneField" placeholder="Phone">
             <div class="invalid-feedback">
               Invalid. Kindly follow the format "0129983948".
             </div>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" id="messageField" placeholder="Message*" required>
+            <input type="text" class="form-control" id="contactMessageField" placeholder="Message*" required>
             <div class="invalid-feedback">
               Message is required.
             </div>
@@ -461,7 +540,6 @@
       </div>
     </div>
   </div>
-
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
