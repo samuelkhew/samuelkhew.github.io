@@ -4,13 +4,13 @@ body {
   font: 1rem 'Work Sans', sans-serif;
   color: #666666;
   text-align: justify;
-  position: relative;
+  /* position: relative; */
   margin-top: 40px;
 }
 
 @media (max-width: 576px) {
-  .display-4, h1 #homeJumbotronText {
-    font-size: 1.8rem;
+  .display-4, h1, #homeJumbotronText {
+    font-size: 9vw;
     line-height: 4rem;
   }
 
@@ -26,12 +26,10 @@ body {
   }
 
   #contactButton {
-    padding: 0.1rem 0rem;
-    margin: 1rem 0rem 1rem 0.5rem;
     height: 35px;
     width: 130px;
-    font-size: 1.2rem;
-    font-weight: 900;
+    padding: 0.3rem 1.2rem;
+    margin: 1rem 0.5rem;
   }
 
   .jumbotron {
@@ -128,12 +126,10 @@ body {
   }
 
   #contactButton {
-    padding: 0.1rem 0rem;
-    margin: 1rem 0rem 1rem 0.5rem;
     height: 35px;
     width: 130px;
-    font-size: 1.2rem;
-    font-weight: 900;
+    padding: 0.3rem 1.2rem;
+    margin: 1rem 0.5rem;
   }
 
   .jumbotron {
@@ -245,12 +241,10 @@ body {
   }
 
   #contactButton {
-    padding: 0.1rem 0rem;
-    margin: 1rem 0rem 1rem 0.5rem;
     height: 35px;
     width: 130px;
-    font-size: 1.2rem;
-    font-weight: 900;
+    padding: 0.3rem 1.2rem;
+    margin: 1rem 0.5rem;
   }
 
   .jumbotron {
@@ -374,12 +368,10 @@ body {
    }
 
    #contactButton {
-    padding: 0.1rem;
-    margin: 0.18rem 0.5rem 0rem 0.5rem;
-    height: 27px;
+    height: 28px;
     width: 104px;
-    font-size: 0.9rem;
-    font-weight: 900;
+    padding: 0.4rem 1.1rem;
+    margin-top: 0.1rem;
   }
  
   .jumbotron {
@@ -507,12 +499,10 @@ body {
    }
 
    #contactButton {
-    padding: 0.1rem;
-    margin: 0.18rem 0.5rem 0rem 0.5rem;
-    height: 27px;
+    height: 28px;
     width: 104px;
-    font-size: 0.9rem;
-    font-weight: 900;
+    padding: 0.4rem 1.1rem;
+    margin-top: 0.1rem;
   }
  
   .jumbotron {
@@ -639,7 +629,7 @@ body {
 #contactButton {
   border-radius: 25px;
   color: #3d9acd;
-  border-color: #3d9acd;  
+  border: 1px solid #3d9acd;
   background-color: white;
 }
 
@@ -649,7 +639,7 @@ body {
   color: white;
 }
 
-#historyContainer, #catalogueContainer, #partnersContainer{
+#historyContainer, #catalogueContainer, #partnersContainer, #contactContainer{
   padding-top: 6rem;
   margin-top: -6rem;
 }
@@ -692,11 +682,11 @@ body {
   margin-bottom: 2rem;
 }
 
-.valuesTableLeftColumn {
+.values-table-left-column {
   color: #3d9acd;
 }
 
-.valuesTableRightColumn {
+.values-table-right-column {
   padding-left: 1rem;
 }
 
@@ -723,7 +713,7 @@ body {
   background-image: url("assets/catalogue-background.png");
 }
 
-.downloadButton {
+.download-button {
   border-radius: 25px;
   color: white;
   border-color: #f06116;  
@@ -732,7 +722,7 @@ body {
   padding: 0.5rem 1.5rem;
 }
 
-.downloadButton:hover {
+.download-button:hover {
   background-color: white;
   transition-duration: 0.5s;
   color: #f06116;
@@ -764,13 +754,19 @@ body {
   padding-bottom: 0;
 }
 
+.partners-modal {
+  overflow: auto; /* Enable scroll if needed */
+}
+
+.partners-modal-image {
+  
+  width: 100%;
+  /* max-width: 100%; */
+}
+
 #contactFormDiv {
   border-left: 1px solid #3d9acd; 
 }
-
-/* input {
-  max-width: 25rem;
-} */
 
 .form-control::placeholder {
   color: #ccc;
@@ -828,7 +824,7 @@ body {
   padding: 0rem 5rem;
 }
 
-.display-4, h1 #careersJumbotronText {
+.display-4, h1, #careersJumbotronText {
   font-weight: 750;
   margin: 0rem;
   font-size: 3rem;
@@ -844,7 +840,7 @@ body {
   margin: 1rem;
 }
 
-.positionsDetailsButton {
+.positions-details-button {
   border-radius: 25px;
   color: #3d9acd;
   border-color: #3d9acd;  
@@ -855,7 +851,7 @@ body {
   width: 130px;
 }
 
-.positionsDetailsButton:hover {
+.positions-details-button:hover {
   background-color: #3d9acd;
   transition-duration: 0.5s;
   color: white;
@@ -873,7 +869,3 @@ body {
   width: 40px;
   text-align: right;
 }
-
-/* div {
-  border:1px solid red;
-}  */
