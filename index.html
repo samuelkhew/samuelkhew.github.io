@@ -7,56 +7,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <!-- Link to CSS style sheet -->
   <link rel="stylesheet" href="styles.css">
 
-
-  <script>
-    //Script to disable contact form submission without required fields
-    (function () {
-      'use strict';
-      window.addEventListener('load', function () {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function (form) {
-          form.addEventListener('submit', function (event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
-
-    //Script to disable contact form submission without required fields
-    function yesnoCheck() {
-      if (document.getElementById('downloadYes').checked) {
-        document.getElementById('placeOfPracticeDiv').style.display = "block";
-        document.getElementById('downloadPlaceField').focus();
-      }
-      else document.getElementById('placeOfPracticeDiv').style.display = "none";
-    }
-
-  </script>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/Jetpharma-Favicon-32x32.png" type="image/gif" sizes="16x16">
 
   <title>Jetpharma Homepage</title>
-
 </head>
 
 <body data-spy="scroll" data-target="#mainNavbar" data-offset="200">
-
   <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="mainNavbar">
     <a class="navbar-brand" href="index.html">
       <img src="assets/jetpharma-logo.svg" alt="Jetpharma Logo" id="navbarLogo">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-      aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -67,8 +36,7 @@
         <a class="nav-item nav-link" href="#catalogueContainer">CATALOGUE</a><span class="navbar-dot"></span>
         <a class="nav-item nav-link" href="#partnersContainer">PARTNERS</a><span class="navbar-dot"></span>
         <a class="nav-item nav-link" href="careers.html">CAREERS</a>
-        <button type="button" id="contactButton">Contact</button>
-        <!-- <a class="nav-item nav-link" href="#partnersContainer" role="button" id="contactButton">CONTACT</a> -->
+        <a class="nav-item nav-link ml-lg-2" href="#contactContainer" role="button" id="contactButton">CONTACT</a>
       </div>
     </div>
   </nav>
@@ -99,19 +67,18 @@
 
             <table>
               <tr>
-                <td class="valuesTableLeftColumn">I</td>
-                <td class="valuesTableRightColumn">Worth of the Individual</td>
+                <td class="values-table-left-column">I</td>
+                <td class="values-table-right-column">Worth of the Individual</td>
               </tr>
               <tr>
-                <td class="valuesTableLeftColumn">II</td>
-                <td class="valuesTableRightColumn">Teamwork</td>
+                <td class="values-table-left-column">II</td>
+                <td class="values-table-right-column">Teamwork</td>
               </tr>
               <tr>
-                <td class="valuesTableLeftColumn">III</td>
-                <td class="valuesTableRightColumn">Honesty & Integrity</td>
+                <td class="values-table-left-column">III</td>
+                <td class="values-table-right-column">Honesty & Integrity</td>
               </tr>
-            </table>
-            <br />
+            </table><br />
 
             <p>With experience of almost 15 years in the pharmaceuticals and medical device market here in Malaysia,
               Jetpharmacan be your trusted partner to help build and create value for your brands. </p>
@@ -152,7 +119,8 @@
     </div>
     <div class="row" id="servicesTextRow">
       <div class="col-lg-4 px-5">
-        <img src="assets/regulatory-affairs-icon.svg" alt="Regulatory Affairs Icon" class="services-icon-images rounded mx-auto d-block">
+        <img src="assets/regulatory-affairs-icon.svg" alt="Regulatory Affairs Icon"
+          class="services-icon-images rounded mx-auto d-block">
         <br />
         <p class="text-dark text-center font-weight-bold">Regulatory Affairs</p>
         <p>- Our team has a proven track record of approvals for pharmaceutical, OTC, traditional products and
@@ -161,7 +129,8 @@
         <br />
       </div>
       <div class="col-lg-4 px-5">
-        <img src="assets/salesforce-marketing-icon.svg" alt="Regulatory Affairs Icon" class="services-icon-images rounded mx-auto d-block">
+        <img src="assets/salesforce-marketing-icon.svg" alt="Regulatory Affairs Icon"
+          class="services-icon-images rounded mx-auto d-block">
         <br />
         <p class="text-dark text-center font-weight-bold">Salesforce & Marketing</p>
         <p>
@@ -174,7 +143,8 @@
         <br />
       </div>
       <div class="col-lg-4 px-5">
-        <img src="assets/warehousing-facilities-icon.svg" alt="Regulatory Affairs Icon" class="services-icon-images rounded mx-auto d-block">
+        <img src="assets/warehousing-facilities-icon.svg" alt="Regulatory Affairs Icon"
+          class="services-icon-images rounded mx-auto d-block">
         <br />
         <p class="text-dark text-center font-weight-bold">Warehousing Facilities & Distribution</p>
         <p>
@@ -247,8 +217,7 @@
       </div>
       <div class="col-sm-8 history-right-col">
         <span class="history-large-dot shadow-sm"></span><span class="history-small-dot"></span>Awarded ISO 9001:2008
-        certification for establishing a Quality Management System for Trading and Distribution of Pharmaceuticals
-        and
+        certification for establishing a Quality Management System for Trading and Distribution of Pharmaceuticals and
         Medical Devices.
       </div>
     </div>
@@ -290,16 +259,19 @@
     </div>
   </div>
 
-  <div class="container mt-5" id="catalogueContainer">
-    <div class="card card-body shadow text-center pb-5" id="catalogueDiv">
+  <div class="container" id="catalogueContainer">
+    <div class="card card-body shadow text-center mt-5 pb-5" id="catalogueDiv">
       <div class="row">
         <div class="col-sm-12 my-auto">
           <p>NEED TO KNOW WHAT PRODUCTS WE HAVE?<br />
             SIMPLY DOWNLOAD OUR PRODUCT CATALOGUE TO FIND ALL
             THE INFORMATION YOU NEED</p>
           <img src="assets/download-icon.png" alt="Download Icon"><br /><br />
-          <button type="button" class="downloadButton" data-toggle="collapse" data-target="#downloadCollapse"
-            aria-expanded="false">DOWNLOAD</button>
+          <button type="button" class="download-button" data-toggle="collapse" data-target="#downloadCollapse"
+            aria-expanded="false" id="downloadToggleButton" onclick="javascript:setPlaceVariable()">DOWNLOAD</button>
+          <div style="display:none" class="alert alert-success" role="alert" id="downloadThankYouMessage">
+            Congratulations! You have successfully downloaded our product catalogue.
+          </div>
         </div>
       </div>
     </div>
@@ -312,48 +284,49 @@
           <div class="card card-body shadow" id="downloadCard">
             It's always best to know exactly what you're purchasing before you click "Check Out".<br />
             Download our product catalogue for free!
-            <form class="needs-validation mt-4" novalidate>
+            <form class="needs-validation mt-4" novalidate method="get" onsubmit="submitDownloadForm()"
+              action="assets/Jetpharma-Product-Catalogue.pdf" download target="_blank" id="downloadForm">
               <div class="form-row">
                 <div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3">
                   <div class="form-group">
-                    <input type="text" class="form-control" id="downloadNameField" placeholder="Name*" required>
+                    <input type="text" class="form-control" name="pc_name" id="downloadNameInput" placeholder="Name*"
+                      required>
                     <div class="invalid-feedback">
                       Name is required.
                     </div>
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="downloadEmailField" placeholder="Email*" required>
+                    <input type="text" class="form-control" name="pc_email" id="downloadEmailInput" placeholder="Email*"
+                      required>
                     <div class="invalid-feedback">
                       Email is required.
                     </div>
                   </div>
                   <div class="form-group">
-                    <input type="number" class="form-control" id="downloadPhoneField" placeholder="Phone">
-                    <div class="invalid-feedback">
-                      Invalid. Kindly follow the format "0129983948".
-                    </div>
+                    <input type="number" class="form-control" name="pc_phone" id="downloadPhoneInput"
+                      placeholder="Phone">
                   </div>
                   Are you a healthcare professional? <br />
                   <div class="form-check form-check-inline my-4">
-                    <input class="mr-2" type="radio" onclick="javascript:yesnoCheck();" name="inlineRadioOptions" id="downloadYes"
-                      value="Yes">
+                    <input class="mr-2" type="radio" onclick="javascript:yesNoCheck();" name="inlineRadioOptions"
+                      id="downloadYes" value="Yes">
                     <label class="form-check-label" for="downloadYes">Yes</label>
                   </div>
                   <div class="form-check form-check-inline ml-5">
-                    <input class="mr-2" type="radio" onclick="javascript:yesnoCheck();" name="inlineRadioOptions" id="downloadNo"
-                      value="No" checked>
+                    <input class="mr-2" type="radio" onclick="javascript:yesNoCheck();" name="inlineRadioOptions"
+                      id="downloadNo" value="No" checked>
                     <label class="form-check-label" for="downloadNo">No</label>
                   </div>
                   <div id="placeOfPracticeDiv" style="display:none">
                     <div class="form-group">
-                      <input type="text" class="form-control" id="downloadPlaceField" placeholder="Place of Practice*"
-                        required>
+                      <input type="text" class="form-control" name="pc_place_of_practice" id="downloadPlaceInput"
+                        placeholder="Place of Practice*" required>
                       <div class="invalid-feedback">
                         Place of practice is required.
                       </div>
                     </div>
                   </div>
-                  <br /><button type="submit" class="downloadButton">DOWNLOAD FOR FREE</button>
+                  <br /><button type="submit" class="download-button" id="downloadForFreeButton">DOWNLOAD FOR FREE</button>
                 </div>
               </div>
             </form>
@@ -363,8 +336,8 @@
     </div>
   </div>
 
-  <div class="container" id="partnersContainer">
-    <div class="row mt-5 mb-3">
+  <div class="container mt-2" id="partnersContainer">
+    <div class="row mb-3">
       <div class="col-12 text-center">
         <h4 class="grey-header">PARTNERS</h1>
       </div>
@@ -382,7 +355,7 @@
             Nov 2016 MAT).</p>
         </div>
         <div class="card-footer partners-card-header-and-footer pb-2">
-          <a href=".bd-example-modal-lg" data-toggle="modal"><img src="assets/circle-arrow-icon.png" alt="Circle Arrow Icon"></a>
+          <a href="#intasModal" data-toggle="modal"><img src="assets/circle-arrow-icon.png" alt="Circle Arrow Icon"></a>
         </div>
       </div>
       <div class="card shadow mb-4 text-center partners-cards">
@@ -396,7 +369,8 @@
             supplier of large volume low pressure (LVLP) saline nasal irrigation systems in the world.</p>
         </div>
         <div class="card-footer partners-card-header-and-footer pb-2">
-          <a href=".bd-example-modal-lg" data-toggle="modal"><img src="assets/circle-arrow-icon.png" alt="Circle Arrow Icon"></a>
+          <a href="#neilmedModal" data-toggle="modal"><img src="assets/circle-arrow-icon.png"
+              alt="Circle Arrow Icon"></a>
         </div>
       </div>
       <div class="card shadow mb-4 text-center partners-cards">
@@ -411,12 +385,14 @@
             numerous awards for their innovations.</p><br />
         </div>
         <div class="card-footer partners-card-header-and-footer pb-2">
-          <a href=".bd-example-modal-lg" data-toggle="modal"><img src="assets/circle-arrow-icon.png" alt="Circle Arrow Icon"></a>
+          <a href="#aspideModal" data-toggle="modal"><img src="assets/circle-arrow-icon.png"
+              alt="Circle Arrow Icon"></a>
         </div>
       </div>
       <div class="card shadow mb-4 text-center partners-cards">
         <div class="card-header partners-card-header-and-footer pb-2">
-          <img src="assets/moscow-regional-institute-of-blood-logo.png" alt="Moscow Regional Scientific Reasearch Institute of Blood Logo">
+          <img src="assets/moscow-regional-institute-of-blood-logo.png"
+            alt="Moscow Regional Scientific Reasearch Institute of Blood Logo">
         </div>
         <div class="card-body partners-card-body">
           <p><b>Moscow Regional Scientific Reasearch Institute of Blood</b></p>
@@ -426,56 +402,102 @@
             techniques are patented and used in Russia.</p><br />
         </div>
         <div class="card-footer partners-card-header-and-footer pb-2">
-          <a href=".bd-example-modal-lg" data-toggle="modal"><img src="assets/circle-arrow-icon.png" alt="Circle Arrow Icon"></a>
+          <a href="#moscowModal" data-toggle="modal"><img src="assets/circle-arrow-icon.png"
+              alt="Circle Arrow Icon"></a>
+        </div>
+      </div>
+      <div class="card shadow mb-4 text-center partners-cards">
+        <div class="card-header partners-card-header-and-footer pb-2">
+          <img src="assets/pharm-products-logo.png" alt="Moscow Regional Scientific Reasearch Institute of Blood Logo">
+        </div>
+        <div class="card-body partners-card-body">
+          <p><b>Pharm Products</b></p>
+          <p class="text-justify">Founded in 1956 by Mr. G. Swaminathan with a large interest in focusing on health by
+            considering both allopathic and siddha systems. </p><br />
+        </div>
+        <div class="card-footer partners-card-header-and-footer pb-2">
+          <a href="#pharmProductsModal" data-toggle="modal"><img src="assets/circle-arrow-icon.png"
+              alt="Circle Arrow Icon"></a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Modal- I'll do this at the end -->
-  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-    aria-hidden="true">
+
+  <div class="modal fade partners-modal" id="intasModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>Modal body text goes here.</p>
-        </div>
-      </div>
+      <button type="button" class="close modal-close-button" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <img src="assets/Partners Products/sinus-rinse_neilmed.jpg" class="partners-modal-image"
+        alt="Stop Cof- Pharm Products">
+    </div>
+  </div>
+  <div class="modal fade partners-modal" id="neilmedModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <button type="button" class="close modal-close-button" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <img src="assets/Partners Products/sinus-rinse_neilmed.jpg" class="partners-modal-image"
+        alt="Stop Cof- Pharm Products">
+    </div>
+  </div>
+  <div class="modal fade partners-modal" id="aspideModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <button type="button" class="close modal-close-button" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <img src="assets/Partners Products/fiche-xd-gbr_aspide.jpg" class="partners-modal-image"
+        alt="Stop Cof- Pharm Products">
+    </div>
+  </div>
+  <div class="modal fade partners-modal" id="moscowModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <button type="button" class="close modal-close-button" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <img src="assets/Partners Products/haemoblock_moscow.jpg" class="partners-modal-image"
+        alt="Stop Cof- Pharm Products">
+    </div>
+  </div>
+  <div class="modal fade partners-modal" id="pharmProductsModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <button type="button" class="close modal-close-button" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <img src="assets/Partners Products/stopcof_pharm-products.jpg" class="partners-modal-image"
+        alt="Stop Cof- Pharm Products">
     </div>
   </div>
 
-  <div class="container mt-5">
-    <div class="row">
+  <div class="container" id="contactContainer">
+    <div class="row mt-5">
       <div class="col-sm-4">
         <h4 class="grey-header pr-2" id="contactHeading">CONTACT</h4>
       </div>
       <div class="col-sm-8" id="contactFormDiv">
-        <form class="needs-validation" novalidate>
+        <div class="alert alert-success" role="alert" style="display:none" id="contactSuccessAlert">
+          Thank you for contacting us! We will get back to you soon.
+        </div>
+        <form class="needs-validation" novalidate onsubmit="submitContactForm(event)" method="POST" id="contactForm">
           <div class="form-group">
-            <input type="text" class="form-control" id="contactNameField" placeholder="Name*" required>
+            <input type="text" class="form-control" name="c_name" id="contactNameInput" placeholder="Name*" required>
             <div class="invalid-feedback">
               Name is required.
             </div>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" id="contactEmailField" placeholder="Email*" required>
+            <input type="text" class="form-control" name="c_email" id="contactEmailInput" placeholder="Email*" required>
             <div class="invalid-feedback">
               Email is required.
             </div>
           </div>
           <div class="form-group">
-            <input type="number" class="form-control" id="contactphoneField" placeholder="Phone">
-            <div class="invalid-feedback">
-              Invalid. Kindly follow the format "0129983948".
-            </div>
+            <input type="number" class="form-control" name="c_phone" id="contactPhoneInput" placeholder="Phone">
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" id="contactMessageField" placeholder="Message*" required>
+            <input type="text" class="form-control" name="c_message" id="contactMessageInput" placeholder="Message*"
+              required>
             <div class="invalid-feedback">
               Message is required.
             </div>
@@ -543,12 +565,15 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+  <script src="jquery.serialize-object.min.js"></script>
+  <script src="myScripts.js"></script>
 </body>
-
 </html>
