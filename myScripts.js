@@ -1,3 +1,8 @@
+//
+$('.navbar-nav>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
+
 //Download Form: Setting the Place of Practice Variable to "N/A"
 function setPlaceVariable() {
     if (!document.getElementById('downloadYes').checked) {
@@ -29,7 +34,7 @@ function submitDownloadForm() {
 
         //Save details to Google Sheet
         var $form = $('form#downloadForm'),
-            url = 'https://script.google.com/macros/s/AKfycbxitHoscAQZYkI1zhSY-g-HJ7ZMgAEJjUYsKVXGelmEwxp4o3_t/exec'
+            url = 'https://script.google.com/macros/s/AKfycbwHUBjJ82PvINsqadmIIfuRYkwTPIPst48CQ7TZoyN0iuohtTg/exec'
         var jqxhr = $.ajax({
             url: url,
             method: "GET",
@@ -40,6 +45,10 @@ function submitDownloadForm() {
 }
 
 //(1)Show thank you alert (2)Send email to Jetpharma.
+/*Note: The email is sending from jetpharmasdnbhd@gmail.com to enquiry@jetpharma.com.my
+If you exceed the daily send limit, it will NOT send.  However, the enquiry will appear in the jetpharmasdnbhd@gmail.com inbox.
+https://ctrlq.org/docs/20309-gmail-message-not-sent
+*/
 function submitContactForm(e) {
     var form = document.getElementById('contactForm');
     if (form.checkValidity() == true) {
@@ -48,7 +57,7 @@ function submitContactForm(e) {
 
         e.preventDefault();
   
-        const POST_URL = 'https://script.google.com/macros/s/AKfycbwM8IsIM0yEqegEfehwLvA5V2DJjDfU0GBTyHxh436NUVixAu6J/exec';
+        const POST_URL = 'https://script.google.com/macros/s/AKfycbwMnGgxNKIFjLMpU-hiD4aYdXZ4bYTolxLuwTAuz_8RsDAF_MYM/exec';
     
         const postRequest = {
         name: e.target['c_name'].value,
@@ -60,6 +69,23 @@ function submitContactForm(e) {
         $.post(POST_URL, JSON.stringify(postRequest));
     }
 }
+
+var area = document.getElementById('contactMessageInput');
+
+//Prevent Product Catalogue download form from submitting by pressing "Enter"
+document.getElementById('downloadForm').addEventListener('keydown', function (e) {
+    if (e.keyCode === 13) {
+      e.preventDefault();  
+    }
+  });
+  
+
+//Prevent Contact form from submitting by pressing "Enter"
+document.getElementById('contactForm').addEventListener('keydown', function (e) {
+  if (e.keyCode === 13 && e.target !== area) {
+    e.preventDefault();  
+  }
+});
 
 //Form validation script from getbootstrap.com
 (function () {
