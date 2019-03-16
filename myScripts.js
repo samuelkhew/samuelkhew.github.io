@@ -1,4 +1,4 @@
-//
+//Collapse Navbar on mobile view when a link is clicked
 $('.navbar-nav>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
@@ -44,8 +44,16 @@ function submitDownloadForm() {
     }
 }
 
-//(1)Show thank you alert (2)Send email to Jetpharma.
-/*Note: The email is sending from jetpharmasdnbhd@gmail.com to enquiry@jetpharma.com.my
+//Prevent Product Catalogue download form from submitting by pressing "Enter"
+/*document.getElementById('downloadForm').addEventListener('keydown', function (e) {
+    if (e.keyCode === 13) {
+      e.preventDefault();  
+    }
+  });*/
+  
+
+/*(1)Show thank you alert (2)Send email to Jetpharma.
+Note: The email is sending from jetpharmasdnbhd@gmail.com to enquiry@jetpharma.com.my
 If you exceed the daily send limit, it will NOT send.  However, the enquiry will appear in the jetpharmasdnbhd@gmail.com inbox.
 https://ctrlq.org/docs/20309-gmail-message-not-sent
 */
@@ -70,17 +78,9 @@ function submitContactForm(e) {
     }
 }
 
+//Prevent Contact form from submitting by pressing "Enter"
 var area = document.getElementById('contactMessageInput');
 
-//Prevent Product Catalogue download form from submitting by pressing "Enter"
-document.getElementById('downloadForm').addEventListener('keydown', function (e) {
-    if (e.keyCode === 13) {
-      e.preventDefault();  
-    }
-  });
-  
-
-//Prevent Contact form from submitting by pressing "Enter"
 document.getElementById('contactForm').addEventListener('keydown', function (e) {
   if (e.keyCode === 13 && e.target !== area) {
     e.preventDefault();  
