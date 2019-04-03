@@ -639,12 +639,12 @@ body {
   color: white;
 }
 
-#historyContainer, #catalogueContainer, #partnersContainer, #contactContainer{
+#history, #catalogue, #partners, #contact{
   padding-top: 6rem;
   margin-top: -6rem;
 }
 
-#homeJumbotronDiv {
+#about-us {
   background-image: url(assets/jetpharma-medicine.png);
   height: 28rem;
   background-size: cover;
